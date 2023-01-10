@@ -1,0 +1,22 @@
+.jumbotron{
+    background-color: rgb(176, 179, 183);
+}
+/* .card-title{
+    background-color: rgb(213, 216, 219);
+} */
+/* .d1{
+    background-color: aqua;
+} */
+.hr{
+    color: black;
+}
+.card {
+    border-style: 5px solid black;
+    padding-bottom: 3%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="search_style.css">
+    
+    <script src="search_script.js"></script>
+    
+    <!-- <link rel="stylesheet" href="./css-1.css"> -->
+    <title>Fixed table</title>
+</head>
+
+<body>
+    <div class="heading">
+    <h1>Search Alumni</h1>
+    <!-- <button id="get-unique-values" onclick="getUniqueValuesFromColumn()">Get unique column values</button> -->
+</div>
+    <div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="emp-table">
+        <thead>
+            <th col-index = 1>Alumni ID</th>
+            <th col-index = 2>YearOfGraduation
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+
+            <th col-index = 3>Trade
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 4>TechnicalSkills
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 5>Languages
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>2020</td>
+                <td>cse</td>
+                <td>Developer</td>
+                <td>python</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>2021</td>
+                <td>cse</td>
+                <td>animation</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>2019</td>
+                <td>it</td>
+                <td>developer</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>2020</td>
+                <td>cse</td>
+                <td>hr</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>2019</td>
+                <td>aiml</td>
+                <td>non technical</td>
+                <td>python</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>2007</td>
+                <td>it</td>
+                <td>developer</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>203</td>
+                <td>2020</td>
+                <td>cse</td>
+                <td>animation</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>2019</td>
+                <td>aiml</td>
+                <td>design</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>2018</td>
+                <td>cse</td>
+                <td>developer</td>
+                <td>python</td>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>2007</td>
+                <td>it</td>
+                <td>design</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>303</td>
+                <td>2010</td>
+                <td>cse</td>
+                <td>Terminated</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>304</td>
+                <td>2010</td>
+                <td>cse</td>
+                <td>On Leave</td>
+                <td>java</td>
+            </tr>
+            
+
+        </tbody>
+    </table>
+    <!-- <script>getUniqueValuesFromColumn()
+    </script> -->
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+        
+    </script>
+</div>
+</div>
+</body>
+
+</html>

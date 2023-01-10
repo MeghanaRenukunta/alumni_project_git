@@ -1,0 +1,45 @@
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+.q {
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid darkgray;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: 2px solid darkgray;
+    outline: none;
+    padding: 5px ;
+    font-size: small;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    text-align: right;
+  }
+  
+  .btn:hover {
+    background-color: rgb(138, 138, 138);
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+    text-align: end;
+  }
+  #btnContainer{
+      padding-bottom: 30px;
+  }
